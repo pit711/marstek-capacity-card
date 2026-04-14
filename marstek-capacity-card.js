@@ -6,7 +6,7 @@
 
 const CARD_VERSION = '1.0.0';
 const NENN = 5120;
-const ZELL_NAMEN = Array.from({length:16},(_,i)=>`batteriepack_${i+1}_zelle_${i+1}_spannung`);
+const ZELL_NAMEN = Array.from({length:16},(_,i)=>`batteriepack_1_zelle_${i+1}_spannung`);
 const ZELL_LABELS = Array.from({length:16},(_,i)=>`Z${String(i+1).padStart(2,'0')}`);
 const ZELL_FARBEN = ['#003F91','#1d4ed8','#0891b2','#0e7490','#047857','#16a34a','#65a30d','#ca8a04','#d97706','#dc2626','#9333ea','#7c3aed','#db2777','#be185d','#475569','#0f766e'];
 
