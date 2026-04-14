@@ -1,5 +1,6 @@
 {
   "name": "Marstek Capacity Card",
+  "type": "plugin",
   "content_in_root": true,
   "render_readme": true,
   "filename": "marstek-capacity-card.js",
