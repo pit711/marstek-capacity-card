@@ -1,0 +1,8 @@
+{
+  "name": "Marstek Capacity Card",
+  "content_in_root": true,
+  "render_readme": true,
+  "filename": "marstek-capacity-card.js",
+  "country": ["DE", "AT", "CH", "GB", "US"],
+  "homeassistant": "2024.1.0"
+}
