@@ -27,9 +27,9 @@ Communicates directly via the [Marstek Venus Modbus plugin](https://github.com/V
 
 ### Via HACS (recommended)
 
-1. Open **HACS → Frontend**
+1. Open **HACS → Dashboard**
 2. Click the three-dot menu → **Custom repositories**
-3. Add `https://github.com/pit711/marstek-capacity-card` with category **Lovelace**
+3. Add `https://github.com/pit711/marstek-capacity-card` with category **Dashboard**
 4. Find **Marstek Capacity Card** in the list → Install
 5. Reload the browser
 
@@ -86,7 +86,7 @@ Go to **Settings → Devices & Services → Entities**, filter for `marstek_venu
 | Deep discharge protection | **12 % SoC** — firmware-fixed |
 | Max measurable capacity | ~4,506 Wh (88 % × 5,120 Wh) |
 | Cell chemistry | LiFePO₄, 16 cells |
-| Cell entities | `sensor.marstek_venus_modbus_batteriepack_N_zelle_N_spannung` |
+| Cell entities | `sensor.marstek_venus_modbus_batteriepack_1_zelle_N_spannung` (N = 1–16) |
 
 ---
 
