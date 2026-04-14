@@ -526,27 +526,25 @@ class MarstekCapacityCard extends HTMLElement {
 
   async _setModus(m) {
     const p = this._prefix;
-    try { await this._haSvc('select','select_option',{entity_id:`select.${p}_betriebsmodus`,option:m==='manuell'?'Manuell':'Auto'}); }
-    catch { await this._haSvc('number','set_value',{entity_id:`number.${p}_betriebsmodus`,value:m==='manuell'?1:0}); }
+    const opt = m === 'manuell' ? 'manual' : 'anti_feed';
+    await this._haSvc('select','select_option',{entity_id:`select.${p}_benutzer_modus`,option:opt});
     this._log(this.t('logMode', m.toUpperCase()), 'cmd');
   }
 
   async _entladeForce(w) {
     const p = this._prefix;
-    await this._haSvc('number','set_value',{entity_id:`number.${p}_entladeleistung`,value:w});
-    try { await this._haSvc('select','select_option',{entity_id:`select.${p}_lademodus`,option:'Erzwungene Entladung'}); } catch {}
+    await this._haSvc('number','set_value',{entity_id:`number.${p}_entladeleistung_einstellen`,value:w});
     this._log(this.t('logDischarge', w), 'cmd');
   }
 
   async _ladeForce(w) {
     const p = this._prefix;
-    await this._haSvc('number','set_value',{entity_id:`number.${p}_ladeleistung`,value:w});
-    try { await this._haSvc('select','select_option',{entity_id:`select.${p}_lademodus`,option:'Erzwungenes Laden'}); } catch {}
+    await this._haSvc('number','set_value',{entity_id:`number.${p}_maximale_ladeleistung`,value:w});
     this._log(this.t('logCharge', w), 'cmd');
   }
 
   async _normal() {
-    try { await this._haSvc('select','select_option',{entity_id:`select.${this._prefix}_lademodus`,option:'Normal'}); } catch {}
+    // In manual mode discharge/charge is controlled via power settings — no separate charge mode entity needed
   }
 
   // ── Auto-connect ────────────────────────────────────────────────────────
