@@ -1,5 +1,6 @@
 {
   "name": "Marstek Capacity Card",
+  "description": "Custom Lovelace card for Marstek Venus E battery capacity testing (unofficial, community-made)",
   "type": "plugin",
   "content_in_root": true,
   "render_readme": true,

@@ -5,6 +5,10 @@
 
 A Lovelace custom card for **multi-cycle capacity testing and calibration** of the Marstek Venus E 3.0 battery storage system.
 
+## Disclaimer
+
+This project is not affiliated with, endorsed by, or associated with Marstek Energy Technology. Marstek and Venus are trademarks of their respective owners. Home Assistant is a trademark of Nabu Casa, Inc. This is an independent community project for interoperability purposes.
+
 Communicates directly via the [Marstek Venus Modbus plugin](https://github.com/ViperRNMC/marstek_venus_modbus) — **no CORS issues**, no extra server, works natively inside Home Assistant.
 
 ---
