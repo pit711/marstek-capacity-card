@@ -2,6 +2,8 @@
 
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/pit711/marstek-capacity-card/releases)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-support-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/711it)
+[![PayPal](https://img.shields.io/badge/PayPal-tip-00457C?logo=paypal&logoColor=white)](https://paypal.me/711IT)
 
 A Lovelace custom card for **multi-cycle capacity testing and calibration** of the Marstek Venus E 3.0 battery storage system.
 
@@ -103,6 +105,15 @@ Go to **Settings → Devices & Services → Entities**, filter for `marstek_venu
 5. The card manages the full test sequence and switches back to Auto mode when complete
 
 > ⚠️ During the test the storage is not available for self-consumption or grid regulation. Run overnight or during low consumption periods.
+
+---
+
+## Support
+
+This project is free and open-source. If it's useful to you, a small tip keeps it going:
+
+- ☕ **Ko-fi:** https://ko-fi.com/711it
+- 💸 **PayPal:** https://paypal.me/711IT
 
 ---
 
